@@ -1,4 +1,5 @@
-djnago == 4.1.7
+python == 3.10.10
+django == 4.1.7
 seaborn == 0.12.0
 joblib == 1.2.0
 scikit-learn == 1.2.2
