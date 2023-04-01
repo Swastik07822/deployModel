@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>home page</title>
+        <link rel="stylesheet" type="text/css" href="static\css\form.css"/>     
+    </head>   
+    <body>
+        <form method="POST">
+            <div class="center">
+                <h1>Predict No of medals</h1>
+                {% csrf_token %}
+                <div class="inputbox">
+                    <input type="text" required="required" name="athletes">
+                    <span>No of atheletes participating </span>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required="required" name="prev_medal">
+                    <span>Medals owned in previous olympics</span>
+                </div>
+                <div class="inputbox">
+                    <button type="submit"> Submit </button>
+                </div> 
+            </div>
+        </form>  
+    </body>
+</html>
+
